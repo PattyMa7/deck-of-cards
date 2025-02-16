@@ -1,6 +1,5 @@
-// src/App.js
 import React from "react";
-import Deck from "./components/Deck";
+import Deck from "./components/Deck"; // Asegúrate de que este archivo existe
 import "./styles.css";
 
 const App = () => {
