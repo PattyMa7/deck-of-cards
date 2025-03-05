@@ -15,7 +15,7 @@ body {
 .app {
   width: 80%;
   max-width: 900px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(221, 8, 8, 0.1);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -40,7 +40,7 @@ body {
 
 .deck:hover {
   transform: scale(1.05);
-  background: darkred;
+  background: rgb(206, 193, 52);
 }
 
 
@@ -99,5 +99,5 @@ button:disabled {
 
 .card.selected {
   border: 3px solid red;
-  background: #ffdddd;
+  background: #df4949;
 }
