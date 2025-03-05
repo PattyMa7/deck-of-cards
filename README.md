@@ -45,7 +45,7 @@ This project is a web application built using the ReactJS framework. The main pu
 
 7. Regroup Button: Shuffles the order of displayed cards randomly.
 
-## Summary
+### Summary
 
 This React application showcases the effective use of components, state management, and user interaction in a web app environment. It serves as both a learning project for mastering ReactJS fundamentals and a practical tool for demonstrating component-based design patterns.
 
