@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# deck-of-cards
+# Deck of Cards React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+This project is a web application built using the ReactJS framework. The main purpose of the application is to simulate the manipulation of a deck of standard playing cards. It allows users to deal cards, reset the deck, toss selected cards, introduce wildcards, and reshuffle displayed cards. The project emphasizes the use of React concepts such as components, props, and state management with hooks, aiming to provide a professional and interactive user experience.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Deck Display: An overturned deck of cards displayed on the page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Dealing Cards: Buttons to deal 5 or 7 cards randomly from the deck.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Card Interaction: Cards can be clicked to select, swap, or highlight them.
 
-### `npm test`
+- Reset Functionality: Reset the deck to its initial state with no displayed cards.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Toss Function: Remove a selected card permanently.
 
-### `npm run build`
+- Wildcard Addition: Generate a random card with any suit and value.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Regroup Function: Shuffle the currently displayed cards randomly.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ReactJS: For building the user interface with components.
 
-### `npm run eject`
+- CSS: To style the application and create a professional look.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Git: For version control with frequent commits to document progress and issues.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How It Works
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Click on the Deck: Adds a randomly selected card to the displayed list.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Deal 5/7 Buttons: Automatically deals 5 or 7 random cards, clearing any previously displayed cards.
 
-## Learn More
+3. Reset Button: Clears all displayed cards and resets the deck.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Card Selection and Swapping: Click on a card to "pick" it. Clicking another card swaps their positions.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+5. Toss Button: Deletes the picked card permanently.
 
-### Code Splitting
+6. Wildcard Button: Adds a random card that may duplicate existing cards in the deck.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+7. Regroup Button: Shuffles the order of displayed cards randomly.
 
-### Analyzing the Bundle Size
+## Summary
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This React application showcases the effective use of components, state management, and user interaction in a web app environment. It serves as both a learning project for mastering ReactJS fundamentals and a practical tool for demonstrating component-based design patterns.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
