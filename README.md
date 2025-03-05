@@ -7,45 +7,45 @@ This project is a web application built using the ReactJS framework. The main pu
 
 ## Features
 
-- Deck Display: An overturned deck of cards displayed on the page.
+- ***Deck Display:*** An overturned deck of cards displayed on the page.
 
-- Dealing Cards: Buttons to deal 5 or 7 cards randomly from the deck.
+- ***Dealing Cards:*** Buttons to deal 5 or 7 cards randomly from the deck.
 
-- Card Interaction: Cards can be clicked to select, swap, or highlight them.
+- ***Card Interaction:*** Cards can be clicked to select, swap, or highlight them.
 
-- Reset Functionality: Reset the deck to its initial state with no displayed cards.
+- ***Reset Functionality:*** Reset the deck to its initial state with no displayed cards.
 
-- Toss Function: Remove a selected card permanently.
+- ***Toss Function:*** Remove a selected card permanently.
 
-- Wildcard Addition: Generate a random card with any suit and value.
+- ***Wildcard Addition:*** Generate a random card with any suit and value.
 
-- Regroup Function: Shuffle the currently displayed cards randomly.
+- ***Regroup Function:*** Shuffle the currently displayed cards randomly.
 
 ## Technologies Used
 
-- ReactJS: For building the user interface with components.
+- ***ReactJS:*** For building the user interface with components.
 
-- CSS: To style the application and create a professional look.
+- ***CSS:*** To style the application and create a professional look.
 
-- Git: For version control with frequent commits to document progress and issues.
+- ***Git:*** For version control with frequent commits to document progress and issues.
 
 ## How It Works
 
-1. Click on the Deck: Adds a randomly selected card to the displayed list.
+1. ***Click on the Deck:*** Adds a randomly selected card to the displayed list.
 
-2. Deal 5/7 Buttons: Automatically deals 5 or 7 random cards, clearing any previously displayed cards.
+2. ***Deal 5/7 Buttons:*** Automatically deals 5 or 7 random cards, clearing any previously displayed cards.
 
-3. Reset Button: Clears all displayed cards and resets the deck.
+3. ***Reset Button:*** Clears all displayed cards and resets the deck.
 
-4. Card Selection and Swapping: Click on a card to "pick" it. Clicking another card swaps their positions.
+4. ***Card Selection and Swapping:*** Click on a card to "pick" it. Clicking another card swaps their positions.
 
-5. Toss Button: Deletes the picked card permanently.
+5. ***Toss Button:*** Deletes the picked card permanently.
 
-6. Wildcard Button: Adds a random card that may duplicate existing cards in the deck.
+6. ***Wildcard Button:*** Adds a random card that may duplicate existing cards in the deck.
 
-7. Regroup Button: Shuffles the order of displayed cards randomly.
+7. ***Regroup Button:*** Shuffles the order of displayed cards randomly.
 
-### Summary
+## Summary
 
 This React application showcases the effective use of components, state management, and user interaction in a web app environment. It serves as both a learning project for mastering ReactJS fundamentals and a practical tool for demonstrating component-based design patterns.
 
