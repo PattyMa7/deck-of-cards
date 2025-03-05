@@ -1,4 +1,3 @@
-// src/components/Deck.js
 import React, { useState } from "react";
 import Card from "./Card";
 import "../styles.css";
@@ -77,6 +76,7 @@ const Deck = () => {
 
   return (
     <div className="deck-container">
+      <h1>Deck of Cards</h1>
       <div className="deck" onClick={drawCard}>
         {deck.length > 0 ? "Deck" : "No Cards Remaining"}
       </div>
