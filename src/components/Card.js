@@ -1,4 +1,3 @@
-// src/components/Card.js
 import React from "react";
 import "../styles.css";
 
@@ -8,7 +7,8 @@ const Card = ({ suit, value, onClick, isSelected }) => {
       className={`card ${isSelected ? "selected" : ""}`}
       onClick={onClick}
     >
-      {value} {suit}
+      <span className="card-value">{value}</span>
+      <span className="card-suit">{suit}</span>
     </div>
   );
 };
