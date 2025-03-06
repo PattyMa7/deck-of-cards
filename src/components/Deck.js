@@ -29,16 +29,12 @@ const Deck = () => {
   };
 
   const dealCards = (count) => {
-    if (deck.length < count) return;
-    setDeck(createDeck());
-    let newCards = [];
-    for (let i = 0; i < count; i++) {
-      let randomIndex = Math.floor(Math.random() * deck.length);
-      newCards.push(deck[randomIndex]);
-      deck.splice(randomIndex, 1);
-    }
+    if (deck.length < count) return; // Prevent dealing more cards than available
+    const shuffledDeck = [...deck].sort(() => Math.random() - 0.5);
+    const newCards = shuffledDeck.slice(0, count);
+    setDeck(shuffledDeck.slice(count)); // Update deck by removing dealt cards
     setSelectedCards(newCards);
-  };
+};
 
   const resetDeck = () => {
     setDeck(createDeck());
