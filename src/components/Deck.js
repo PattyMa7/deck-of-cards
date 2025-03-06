@@ -25,16 +25,21 @@ const Deck = () => {
     const randomIndex = Math.floor(Math.random() * deck.length);
     const newCard = deck[randomIndex];
     setDeck(deck.filter((_, index) => index !== randomIndex));
-    setSelectedCards((prev) => [...prev, newCard]);
+    setSelectedCards([...selectedCards, newCard]);
   };
 
+  // Deal specified number of cards
   const dealCards = (count) => {
-    if (deck.length < count) return; // Prevent dealing more cards than available
-    const shuffledDeck = [...deck].sort(() => Math.random() - 0.5);
-    const newCards = shuffledDeck.slice(0, count);
-    setDeck(shuffledDeck.slice(count)); // Update deck by removing dealt cards
+    const newDeck = createDeck();
+    let newCards = [];
+    for (let i = 0; i < count; i++) {
+      const randomIndex = Math.floor(Math.random() * newDeck.length);
+      newCards.push(newDeck[randomIndex]);
+      newDeck.splice(randomIndex, 1);
+    }
+    setDeck(newDeck);
     setSelectedCards(newCards);
-};
+  };
 
   const resetDeck = () => {
     setDeck(createDeck());
@@ -81,9 +86,7 @@ const Deck = () => {
         <button onClick={() => dealCards(5)}>Deal 5</button>
         <button onClick={() => dealCards(7)}>Deal 7</button>
         <button onClick={resetDeck}>Reset</button>
-        <button onClick={tossCard} disabled={pickedCard === null}>
-          Toss
-        </button>
+        <button onClick={tossCard} disabled={pickedCard === null}>Toss</button>
         <button onClick={addWildcard}>Wildcard</button>
         <button onClick={regroupCards}>Regroup</button>
       </div>
