@@ -108,3 +108,15 @@ footer {
   text-align: center;
   color:rgb(38, 49, 110);
 }
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  #map {
+      height: 350px;
+  }
+
+  .btn-group {
+      flex-direction: column;
+      gap: 5px;
+  }
+}

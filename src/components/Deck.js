@@ -25,7 +25,7 @@ const Deck = () => {
     const randomIndex = Math.floor(Math.random() * deck.length);
     const newCard = deck[randomIndex];
     setDeck(deck.filter((_, index) => index !== randomIndex));
-    setSelectedCards([...selectedCards, newCard]);
+    setSelectedCards((prev) => [...prev, newCard]);
   };
 
   const dealCards = (count) => {
