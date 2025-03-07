@@ -84,7 +84,8 @@ const Deck = () => {
   return (
     <div className="deck-container">
       <h1>Deck of Cards</h1>
-      <div className="deck" onClick={drawCard}>
+      <div className="deck" onClick={deck.length > 0 ? drawCard : null}
+                            style={{ cursor: deck.length > 0 ? "pointer" : "not-allowed" }}>
         {deck.length > 0 ? "Deck" : "No Cards Remaining"}
       </div>
 
