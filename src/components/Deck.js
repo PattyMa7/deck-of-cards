@@ -44,7 +44,7 @@ const Deck = () => {
   const resetDeck = () => {
     setDeck(createDeck());
     setSelectedCards([]);
-    setPickedCard(null);
+    setPickedCard(0);
   };
 
   const selectCard = (index) => {
