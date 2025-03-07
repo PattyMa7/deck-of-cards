@@ -30,14 +30,14 @@ const Deck = () => {
 
   // Deal specified number of cards
   const dealCards = (count) => {
-    const newDeck = createDeck();
     let newCards = [];
-    for (let i = 0; i < count; i++) {
-      const randomIndex = Math.floor(Math.random() * newDeck.length);
-      newCards.push(newDeck[randomIndex]);
-      newDeck.splice(randomIndex, 1);
+    let updatedDeck = [...deck];
+    for (let i = 0; i < count && updatedDeck.length > 0; i++) {
+        const randomIndex = Math.floor(Math.random() * updatedDeck.length);
+        newCards.push(updatedDeck[randomIndex]);
+        updatedDeck.splice(randomIndex, 1);
     }
-    setDeck(newDeck);
+    setDeck(updatedDeck);
     setSelectedCards(newCards);
   };
 
