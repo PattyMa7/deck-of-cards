@@ -60,7 +60,9 @@ const Deck = () => {
 
   const tossCard = () => {
     if (pickedCard === null) return;
+    const tossedCard = selectedCards[pickedCard];
     setSelectedCards(selectedCards.filter((_, index) => index !== pickedCard));
+    setDeck(deck.filter(card => !(card.suit === tossedCard.suit && card.value === tossedCard.value)));
     setPickedCard(null);
   };
 
